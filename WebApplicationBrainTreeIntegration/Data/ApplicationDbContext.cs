@@ -13,33 +13,33 @@ namespace WebApplicationBrainTreeIntegration.Data
             : base(options)
         {
         }
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-            builder.Entity<Book>().HasData(new Book()
-            {
-                Id = 1,
-                Name = "C#",
-                AutherName = "ALI",
-                Price = 1000
-            });
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    base.OnModelCreating(builder);
+        //    builder.Entity<Book>().HasData(new Book()
+        //    {
+        //        Id = 1,
+        //        Name = "C#",
+        //        AutherName = "ALI",
+        //        Price = 1000
+        //    });
 
-            builder.Entity<Book>().HasData(new Book()
-            {
-                Id = 2,
-                Name = "Flutter",
-                AutherName = "Mohamed",
-                Price = 2000
-            });
+        //    builder.Entity<Book>().HasData(new Book()
+        //    {
+        //        Id = 2,
+        //        Name = "Flutter",
+        //        AutherName = "Mohamed",
+        //        Price = 2000
+        //    });
 
-            builder.Entity<Book>().HasData(new Book()
-            {
-                Id = 3,
-                Name = "Python",
-                AutherName = "Khaled",
-                Price = 3000
-            });
-        }
+        //    builder.Entity<Book>().HasData(new Book()
+        //    {
+        //        Id = 3,
+        //        Name = "Python",
+        //        AutherName = "Khaled",
+        //        Price = 3000
+        //    });
+        //}
         public DbSet<Book> Books { get; set; }
     }
 }
